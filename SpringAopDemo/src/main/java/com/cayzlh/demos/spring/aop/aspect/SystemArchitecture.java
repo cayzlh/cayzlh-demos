@@ -13,12 +13,15 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class SystemArchitecture {
 
-    @Pointcut("within(com.cayzlh.demos.spring.aop.service.*)")
+    @Pointcut("within(com.cayzlh.demos.spring.aop.service.impl.AopDemo1ServiceImpl)")
     public void inServiceLayer() {}
 
-    @Pointcut("execution(* com.cayzlh.demos.spring..service.*.*(..))")
+    @Pointcut("execution(* com.cayzlh.demos.spring.aop.service.AopDemoService.*(..))")
     public void businessService() {}
 
     @Pointcut("execution(* around*(..))")
-    public void aroundExample() {};
+    public void aroundExample() {}
+
+    @Pointcut("@annotation(com.cayzlh.demos.spring.aop.annotation.AopDemo)")
+    public void annotationExample() {}
 }

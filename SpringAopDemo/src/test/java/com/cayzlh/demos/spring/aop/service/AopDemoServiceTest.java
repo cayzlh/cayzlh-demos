@@ -26,6 +26,9 @@ public class AopDemoServiceTest {
     @Qualifier("aopDemo2Service")
     public AopDemoService aopDemo2Service;
 
+    @Autowired
+    public AnnotationExampleService annotationExampleService;
+
     @Test
     public void test1() {
         aopDemo1Service.test1();
@@ -38,6 +41,11 @@ public class AopDemoServiceTest {
         aopDemo1Service.aroundTest();
         System.out.println("----------------------------");
         aopDemo2Service.aroundTest();
+    }
+
+    @Test
+    public void annotationTest() {
+        annotationExampleService.annotationExample();
     }
 
 }
