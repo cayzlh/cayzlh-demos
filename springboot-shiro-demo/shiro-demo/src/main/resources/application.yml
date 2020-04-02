@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: shiro-demo
+server:
+  port: 8080
