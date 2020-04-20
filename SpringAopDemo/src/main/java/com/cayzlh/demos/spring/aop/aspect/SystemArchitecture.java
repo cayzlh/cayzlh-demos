@@ -24,4 +24,10 @@ public class SystemArchitecture {
 
     @Pointcut("@annotation(com.cayzlh.demos.spring.aop.annotation.AopDemo)")
     public void annotationExample() {}
+
+    @Pointcut("this(com.cayzlh.demos.spring.aop.service.AopDemoService)")
+    public void thisTest(){}
+
+    @Pointcut("target(com.cayzlh.demos.spring.aop.service.AopDemo2ServiceImpl)")
+    public void targetTest(){}
 }

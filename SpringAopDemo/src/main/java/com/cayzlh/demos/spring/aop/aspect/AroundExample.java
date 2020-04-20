@@ -18,8 +18,12 @@ public class AroundExample {
     @Around("com.cayzlh.demos.spring.aop.aspect.SystemArchitecture.aroundExample()")
     public Object doBusinessServicePointCut(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("匹配执行(* around*(..)).");
+
+        // ,,,,
         Object retVal = pjp.proceed();
+        // .....
         // stop stopwatch
+
         return retVal;
     }
 
