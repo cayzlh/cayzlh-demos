@@ -9,14 +9,21 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>mybatis-technology-insider</artifactId>
-  <name>demos::mybatis技术内幕</name>
+  <artifactId>hutool-demo</artifactId>
 
   <dependencies>
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>5.4.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>2.9.0</version>
     </dependency>
   </dependencies>
+
 
 </project>

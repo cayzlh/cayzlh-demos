@@ -10,7 +10,7 @@
   <modules>
     <module>SpringAopDemo</module>
     <module>springboot-shiro-demo</module>
-    <module>mybatis-technology-insider</module>
+    <module>hutool-demo</module>
   </modules>
 
   <packaging>pom</packaging>
